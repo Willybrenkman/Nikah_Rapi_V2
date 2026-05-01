@@ -742,7 +742,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: 
+            background:
                 radial-gradient(ellipse at 30% 40%, rgba(212, 176, 122, 0.15) 0%, transparent 50%),
                 radial-gradient(ellipse at 70% 60%, rgba(155, 110, 122, 0.1) 0%, transparent 50%);
             pointer-events: none;
@@ -789,8 +789,17 @@
         }
 
         @keyframes playPulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.15); opacity: 0; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.15);
+                opacity: 0;
+            }
         }
 
         .video-label {
@@ -819,13 +828,17 @@
         }
 
         .video-decor-ring.r1 {
-            width: 200px; height: 200px;
-            top: -40px; right: -60px;
+            width: 200px;
+            height: 200px;
+            top: -40px;
+            right: -60px;
         }
 
         .video-decor-ring.r2 {
-            width: 140px; height: 140px;
-            bottom: -30px; left: -40px;
+            width: 140px;
+            height: 140px;
+            bottom: -30px;
+            left: -40px;
         }
 
         .video-highlights {
@@ -881,14 +894,17 @@
             .video-section {
                 padding: 60px 24px;
             }
+
             .video-highlights {
                 grid-template-columns: 1fr;
                 gap: 14px;
             }
+
             .video-play-btn {
                 width: 68px;
                 height: 68px;
             }
+
             .play-triangle {
                 border-width: 11px 0 11px 19px;
                 margin-left: 3px;
@@ -2033,17 +2049,20 @@
 
                 <!-- DASHBOARD -->
                 <div class="preview-stage on" id="p-dash">
-                    <img src="assets/Dashboard.png" alt="Dashboard Utama NIKAH RAPI" style="width: 100%; height: auto; display: block; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
+                    <img src="assets/Dashboard.png" alt="Dashboard Utama NIKAH RAPI"
+                        style="width: 100%; height: auto; display: block; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
                 </div>
 
                 <!-- SESERAHAN -->
                 <div class="preview-stage" id="p-ses">
-                    <img src="assets/seserahan.png" alt="Seserahan Tracker NIKAH RAPI" style="width: 100%; height: auto; display: block; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
+                    <img src="assets/seserahan.png" alt="Seserahan Tracker NIKAH RAPI"
+                        style="width: 100%; height: auto; display: block; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
                 </div>
 
                 <!-- KADO -->
                 <div class="preview-stage" id="p-kado">
-                    <img src="assets/Kado & Angpao.png" alt="Kado dan Angpao Tracker NIKAH RAPI" style="width: 100%; height: auto; display: block; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
+                    <img src="assets/Kado & Angpao.png" alt="Kado dan Angpao Tracker NIKAH RAPI"
+                        style="width: 100%; height: auto; display: block; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
                 </div>
 
                 <!-- BUDGET placeholder -->
@@ -2060,7 +2079,8 @@
 
                 <!-- TAMU placeholder -->
                 <div class="preview-stage" id="p-tamu">
-                    <img src="assets/Guest List.png" alt="Guest List NIKAH RAPI" style="width: 100%; height: auto; display: block; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
+                    <img src="assets/Guest List.png" alt="Guest List NIKAH RAPI"
+                        style="width: 100%; height: auto; display: block; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
                 </div>
 
                 <!-- VENDOR placeholder -->
@@ -2089,7 +2109,7 @@
                 Sekarang</a>
             <div class="cta-notes">
                 <div>✓ Garansi 7 hari</div>
-                <div>✓ File dikirim via WA</div>
+                <div>✓ File dikirim via Email</div>
                 <div>✓ Bisa untuk anak & ibu pakai bareng</div>
             </div>
         </div>
@@ -2109,16 +2129,25 @@
     <section class="video-section">
         <p class="section-eyebrow reveal">Lihat sebelum membeli</p>
         <h2 class="section-title reveal">Lihat Cara Kerjanya —<br><em>Simple Banget</em></h2>
-        <p class="reveal" style="font-size:15px;color:var(--text-mid);font-weight:300;max-width:540px;margin:0 auto 48px;line-height:1.8;">Tinggal isi data, semua otomatis terhitung. Bisa dibuka dari HP maupun Laptop.</p>
+        <p class="reveal"
+            style="font-size:15px;color:var(--text-mid);font-weight:300;max-width:540px;margin:0 auto 48px;line-height:1.8;">
+            Tinggal isi data, semua otomatis terhitung. Bisa dibuka dari HP maupun Laptop.</p>
 
         <div class="video-container reveal">
             <div class="video-decor-ring r1"></div>
             <div class="video-decor-ring r2"></div>
-            <div class="video-frame" onclick="this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/VIDEO_ID?autoplay=1&quot; style=&quot;position:absolute;inset:0;width:100%;height:100%;border:none;&quot; allow=&quot;autoplay;encrypted-media&quot; allowfullscreen></iframe>';this.style.cursor='default'" aria-label="Putar video demo NIKAH RAPI">
+            <div class="video-frame"
+                onclick="this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/VIDEO_ID?autoplay=1&quot; style=&quot;position:absolute;inset:0;width:100%;height:100%;border:none;&quot; allow=&quot;autoplay;encrypted-media&quot; allowfullscreen></iframe>';this.style.cursor='default'"
+                aria-label="Putar video demo NIKAH RAPI">
                 <!-- Decorative content inside the video placeholder -->
-                <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;">
-                    <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--mauve);letter-spacing:3px;margin-bottom:4px;opacity:0.6;">NIKAH RAPI</div>
-                    <div style="font-size:11px;color:var(--text-light);letter-spacing:2px;text-transform:uppercase;opacity:0.5;">Demo Video</div>
+                <div
+                    style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;">
+                    <div
+                        style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--mauve);letter-spacing:3px;margin-bottom:4px;opacity:0.6;">
+                        NIKAH RAPI</div>
+                    <div
+                        style="font-size:11px;color:var(--text-light);letter-spacing:2px;text-transform:uppercase;opacity:0.5;">
+                        Demo Video</div>
                 </div>
                 <div class="video-play-btn">
                     <div class="play-triangle"></div>
@@ -2146,7 +2175,8 @@
         </div>
 
         <div style="margin-top:48px;" class="reveal">
-            <a href="https://entrepreneurai.myscalev.com/checkout-page" class="btn-primary">🤍 Dapatkan NIKAH RAPI — Rp 129.000</a>
+            <a href="https://entrepreneurai.myscalev.com/checkout-page" class="btn-primary">🤍 Dapatkan NIKAH RAPI — Rp
+                129.000</a>
         </div>
     </section>
 
@@ -2542,7 +2572,9 @@
         <div class="faq-inner">
             <div class="faq-item reveal" onclick="toggleFaq(this)">
                 <div class="faq-q">Takut gaptek, bisa pakai tidak? <span class="faq-arrow">+</span></div>
-                <div class="faq-a">Tidak perlu takut gaptek! NIKAH RAPI dirancang sangat mudah digunakan layaknya sosial media. Tinggal isi data — semua kalkulasi berjalan otomatis. Bisa dibuka dari HP maupun komputer.</div>
+                <div class="faq-a">Tidak perlu takut gaptek! NIKAH RAPI dirancang sangat mudah digunakan layaknya sosial
+                    media. Tinggal isi data — semua kalkulasi berjalan otomatis. Bisa dibuka dari HP maupun komputer.
+                </div>
             </div>
             <div class="faq-item reveal" onclick="toggleFaq(this)">
                 <div class="faq-q">Bisa dipakai bareng anak saya? <span class="faq-arrow">+</span></div>
